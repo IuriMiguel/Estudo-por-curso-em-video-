@@ -1,3 +1,4 @@
+
 modules = ["bash", "nodejs-20", "web"]
 
 [nix]
@@ -5,14 +6,6 @@ channel = "stable-24_05"
 
 [workflows]
 runButton = "Servir Projeto"
-
-[[workflows.workflow]]
-name = "Run"
-author = 28571394
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "npx http-server ./exercicios --address 0.0.0.0"
 
 [[workflows.workflow]]
 name = "Servir Projeto"
