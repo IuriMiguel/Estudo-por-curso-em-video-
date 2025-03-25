@@ -4,7 +4,7 @@ modules = ["bash", "nodejs-20", "web"]
 channel = "stable-24_05"
 
 [workflows]
-runButton = "Run"
+runButton = "Servir Projeto"
 
 [[workflows.workflow]]
 name = "Run"
@@ -13,6 +13,15 @@ author = 28571394
 [[workflows.workflow.tasks]]
 task = "shell.exec"
 args = "npx http-server ./exercicios --address 0.0.0.0"
+
+[[workflows.workflow]]
+name = "Servir Projeto"
+author = 28571394
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npx http-server . --address 0.0.0.0"
 
 [[ports]]
 localPort = 8080
