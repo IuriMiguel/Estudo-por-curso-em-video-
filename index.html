@@ -12,14 +12,26 @@
         li { margin: 10px 0; }
         a { color: #0066cc; text-decoration: none; }
         a:hover { text-decoration: underline; }
+        .nav-buttons { margin: 20px 0; display: flex; gap: 20px; }
+        .nav-button {
+            padding: 15px 30px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .nav-button:hover { opacity: 0.9; text-decoration: none; }
+        .button-exercicios { background-color: #0066cc; }
+        .button-desafios { background-color: #4CAF50; }
     </style>
 </head>
 <body>
     <h1>Navegação</h1>
     
-    <div style="margin: 20px 0; display: flex; gap: 10px;">
-        <a href="exercicios/" style="display: inline-block; padding: 15px 30px; background-color: #0066cc; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">Pasta Exercícios</a>
-        <a href="desafios/" style="display: inline-block; padding: 15px 30px; background-color: #4CAF50; color: white; border-radius: 5px; text-decoration: none; font-weight: bold;">Pasta Desafios</a>
+    <div class="nav-buttons">
+        <a href="exercicios/" class="nav-button button-exercicios">Pasta Exercícios</a>
+        <a href="desafios/" class="nav-button button-desafios">Pasta Desafios</a>
     </div>
 
     <h2>Exercícios</h2>
